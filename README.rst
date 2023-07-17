@@ -136,3 +136,12 @@ Reference: PIP Requirements:
     wrapt                   1.12.1
     yfinance                0.1.64
     zipp                    3.6.0
+
+Issues:
+=======
+Some work around if have error
+
+.. code:: bash
+
+    ln -s /usr/include/locale.h /usr/include/xlocale.h
+
