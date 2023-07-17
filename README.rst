@@ -1,36 +1,42 @@
-st# Install Tensorflow 2.5 on Jetson Nano
-Guide to setup Tensorflow 2.x on Jetson Nano
+Install Tensorflow 2.5 on Jetson Nano
+-------------------------------------
 
-Model:   NVIDIA Jetson Nano Developer Kit (4 GB ram)
-Jetpack: 4.6.4
-CUDA:    10.2.300
+.. code:: bash
 
-1. Install & setup a python virtual environment
+    Model:   NVIDIA Jetson Nano Developer Kit (4 GB ram)
+    Jetpack: 4.6.4
+    CUDA:    10.2.300
+    Python:  3.6.9
+
+1. Setup python virtual env, follow this `guide <https://pyimagesearch.com/2020/03/25/how-to-configure-your-nvidia-jetson-nano-for-computer-vision-and-deep-learning/>`_
+
+2. Follow this `guide <https://qengineering.eu/install-tensorflow-2.4.0-on-jetson-nano.html/>`_ (the sudo pip3 change and remove the sudo)
 
 
-2. Ensure numpy version is 1.19.4, else will crash tensorflow
+3. Ensure numpy version is 1.19.4, else will crash tensorflow
 
-  .. code:: bash
+.. code:: bash
   
     pip install numpy==1.19.4
 
-3. choose a version & downlaod
+4. choose a version & downlaod
 
     https://developer.download.nvidia.com/compute/redist/jp/v46/tensorflow/
 
-4. install tensorflow
+5. install tensorflow
 
-  .. code:: bash
+.. code:: bash
   
     pip install tensorflow-2.5.0+nv21.7-cp36-cp36m-linux_aarch64.whl
 
-5. Follow this guide (the sudo pip3 change and remove the sudo)
+6. Follow this guide (the sudo pip3 change and remove the sudo)
 
   https://qengineering.eu/install-tensorflow-2.4.0-on-jetson-nano.html
 
-  Requirements:
-  
-  .. code:: bash
+
+Reference: PIP Requirements:
+
+.. code:: bash
 
     $ pip list
     Package                 Version
